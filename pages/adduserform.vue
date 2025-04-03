@@ -1,11 +1,13 @@
 <template>
-  <div class="h-[500px] flex justify-center">
+  <div class="h-[500px] flex justify-center pt-5">
     <div
       class="h-full w-11/12 flex flex-col gap-7 p-4 border-2 border-gray-300 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-200"
     >
       <div class="w-11/12 flex flex-col gap-2">
-        <div class="flex justify-around items-center gap-2">
-          <div class="w-2/6">
+        <div
+          class="flex flex-col lg:flex-row justify-around items-center gap-5 lg:gap-2"
+        >
+          <div class="w-full lg:w-2/6">
             <input
               id="name"
               type="text"
@@ -18,7 +20,7 @@
             </p>
           </div>
 
-          <div class="w-2/6 relative">
+          <div class="w-full lg:w-2/6 relative">
             <input
               id="password"
               :type="showPassword ? 'text' : 'password'"
@@ -41,8 +43,10 @@
       </div>
 
       <div class="w-11/12 flex flex-col gap-2">
-        <div class="flex justify-around items-center gap-2">
-          <div class="w-2/6">
+        <div
+          class="flex flex-col lg:flex-row justify-around items-center gap-5 lg:gap-2"
+        >
+          <div class="w-full lg:w-2/6">
             <input
               id="number"
               type="text"
@@ -61,7 +65,7 @@
             </p>
           </div>
 
-          <div class="w-2/6">
+          <div class="w-full lg:w-2/6">
             <input
               id="address"
               type="text"
@@ -76,10 +80,10 @@
         </div>
       </div>
 
-      <div class="flex justify-center items-start">
+      <div class="flex justify-start lg:justify-center items-start">
         <button
           @click="submit"
-          class="w-1/6 px-6 py-3 mr-20 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-600 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 active:bg-blue-700 transition-all duration-200"
+          class="w-10/12 lg:w-1/6 flex justify-center px-6 py-3 lg:mr-20 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-600 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 active:bg-blue-700 transition-all duration-200"
         >
           Submit
         </button>

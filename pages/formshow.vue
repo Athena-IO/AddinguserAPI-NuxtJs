@@ -1,6 +1,6 @@
 <template>
   <div
-    class="max-w-md mx-auto p-6 rounded-2xl shadow-lg text-white bg-gradient-to-r from-green-400 to-sky-500"
+    class="max-w-md mx-auto p-6 rounded-2xl shadow-lg text-white bg-gradient-to-r from-green-400 to-sky-500 mt-5"
   >
     <h2 class="text-2xl font-semibold mb-4">User Details</h2>
 
